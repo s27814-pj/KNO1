@@ -28,7 +28,7 @@ def main():
         )
         hist = model.fit(
             x_train, y_train, epochs=5
-        )  # użyj verbose=0 jeśli jest problem z konsolą
+        )  # uzyj verbose=0 jesli jest problem z konsol
         model.evaluate(x_test, y_test)
 
         model.save(FILENAME)
