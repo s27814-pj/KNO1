@@ -33,7 +33,7 @@ def main():
 
     for i in range(n):
         for j in range(n):
-            matrix[i, j].assign(int(args.integers[i + j]))
+            matrix[i, j].assign(int(args.integers[i * n + j]))
 
     print(matrix_result)
     print(matrix)
@@ -42,6 +42,8 @@ def main():
 
     print(out)
 
+
+# sprawdz wyznacznik
 
 if __name__ == "__main__":
     main()
