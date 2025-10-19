@@ -57,7 +57,7 @@ def main():
             img = tf.keras.utils.load_img(
                 args.image_file, target_size=(28, 28), color_mode="grayscale"
             )
-            input_arr = tf.keras.utils.img_to_array(img)
+            input_arr = tf.keras.utils.img_to_array(img)/255.0
             input_arr = np.array([input_arr])
 
             prediction = model.predict(input_arr)
